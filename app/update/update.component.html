@@ -1,0 +1,22 @@
+
+  <div class="form-group">
+    ID
+    <input type="text" id="id" [(ngModel)]=emp.id name="id" disabled="disabled">
+  </div>
+ 
+    <div class="form-group">
+      NAME
+        <input type="text" id="name" [(ngModel)]=emp.name name="name">
+      </div>
+      <div class="form-group">
+          DEPARTMENT
+            <input type="text" id="department" [(ngModel)]=emp.department name="department">
+          </div>
+          <div class="form-group">
+              SALARY
+                <input type="text" id="salary" [(ngModel)]=emp.salary name="salary">
+              </div>
+
+  
+
+  <button type="submit" (click)="update()" class="btn btn-primary">Submit</button>

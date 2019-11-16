@@ -1,0 +1,23 @@
+
+<form #myForm="ngForm" (ngSubmit)="add(myForm)" role="form">
+  <!-- <legend>Form title</legend> -->
+  <br>
+  <div class="form-group">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <label for="">label</label> -->
+    <input type="text" class="form-control" id="name" ngModel name="name" >
+  </div>
+  <br>
+  <div class="form-group">DEPARTMENT
+    <!-- <label for="">label</label> -->
+    <input type="text" class="form-control" id="department" ngModel name="department">
+  </div>
+  <br>
+  <div class="form-group">SALARY
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <label for="">label</label> -->
+    <input type="text" class="form-control" id="salary" ngModel name="salary">
+  </div>
+  
+<br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

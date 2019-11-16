@@ -1,0 +1,29 @@
+
+<button type="button" routerLink="/add" class="btn btn-default">ADD</button>
+
+<div class="table-responsive">
+  <table class="table table-hover" border="1" style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>DEPARTMENT</th>
+        <th>SALARY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.department}}</td>
+        <td>{{emp.salary}}</td>
+        <td>
+        <button type="button" (click)="delete(emp.id)" class="btn btn-danger"  >Delete</button>
+        </td>
+        <td>
+          
+          <button type="button" routerLink="/update/{{emp.id}}" class="btn btn-default">Update</button> 
+        </td>
+    </tbody>
+  </table>
+</div>
